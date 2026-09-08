@@ -9,7 +9,7 @@ Simuladores interativos de investimentos em **Fundos de Investimento Imobiliári
 ### 1️⃣ **IC Financial Simulator** — Versão Padrão
 **Arquivo:** `IC_Financial_Simulator.xlsx` (28 KB)
 
-A versão principal e mais acessível do simulador, ideal para investidores que querem uma experiência clara e objetiva.
+A versão principal e mais acessível do simulador, ideal para investidores que querem uma experiência clara e objetiva com foco em simulações de FIIs.
 
 #### 🎯 Funcionalidades:
 
@@ -36,34 +36,70 @@ Dividendos/mês:      R$ 100,53
 
 ---
 
-### 2️⃣ **IC Financial** — Versão Expandida
+### 2️⃣ **IC Financial** — Versão Expandida com Gestão Financeira
 **Arquivo:** `IC_Finacial.xlsx` (136 KB)
 
-A versão completa e aprofundada com recursos adicionais para análise detalhada e planejamento financeiro avançado.
+A versão completa e profissional com recursos avançados de gestão financeira pessoal integrada com análise de investimentos em FIIs.
 
-#### 🚀 Diferenciais:
+#### 🚀 Funcionalidades Principais:
 
-- ✅ **Análise Aprofundada** — Dados mais detalhados e cenários estendidos
-- ✅ **Planejamento Avançado** — Ferramentas complementares de estratégia de investimento
-- ✅ **Comparativos** — Análise lado a lado de múltiplos cenários
-- ✅ **Dados Estendidos** — Base de dados maior com mais FIIs e variações
-- ✅ **Relatórios** — Geração de relatórios personalizados
+| Módulo | Descrição |
+|--------|-----------|
+| **👤 TITULAR** | Dados pessoais completos (CPF, RG, endereço, contato) |
+| **🏦 RENDIMENTOS BANCÁRIOS** | Consolidação de rendimentos de múltiplos bancos com totais |
+| **📋 NOTAS BANCÁRIAS** | Extrato detalhado com categorias de despesas/receitas |
+| **💼 ANÁLISE INTEGRADA** | Cruzamento entre situação financeira e planejamento em FIIs |
+| **📊 RELATÓRIOS** | Geração automática de relatórios consolidados |
+| **🎯 PLANEJAMENTO** | Simulação com base na situação financeira real |
+
+#### 📌 Seções do IC_Financial:
+
+1. **DADOS DO TITULAR**
+   - Informações pessoais (nome, CPF, data de nascimento)
+   - Contato (telefone, celular, email)
+   - Endereço residencial completo
+   - Status conjugal e dependentes
+
+2. **INFORMES DE RENDIMENTOS BANCÁRIOS**
+   - Total consolidado
+   - Detalhamento por banco (Banco do Brasil, Itaú, Bradesco, etc.)
+   - Valores atuais
+   - Documentos anexados (PDFs)
+
+3. **NOTAS BANCÁRIAS / EXTRATO DE HOLERITES**
+   - Todas as entradas catalogadas por data
+   - Categorias (Holerite, Freelance, Renda Extra, Venda, Reembolso, Bônus, Comissão, etc.)
+   - Valores individuais
+   - Timeline completa de 12+ meses
+
+#### 💡 Caso de Uso Avançado:
+
+```
+Seu cenário financeiro real:
+├─ Rendimento Banco do Brasil: R$ 5.000,00
+├─ Rendimento Itaú: R$ 4.000,00
+├─ Rendimento Bradesco: R$ 3.000,00
+└─ Total: R$ 12.000,00
+
+Categorias de entrada:
+├─ Holerite (salário): R$ 4.500,00
+├─ Freelance: R$ 1.200,00
+├─ Renda Extra: R$ 600,00
+├─ Dividendos: R$ 4.800,00
+└─ ... e mais 15+ categorias
+
+Resultado:
+→ Proposta de aporte em FIIs: R$ 3.600,00/mês
+→ Projeção em 5 anos: R$ +145.000,00
+```
 
 ---
 
 ## 🚀 Como Usar
 
-### Passo 1: Escolha a Versão
-- **Iniciante/Rápido?** → Use `IC_Financial_Simulator.xlsx`
-- **Análise Profunda?** → Use `IC_Finacial.xlsx`
+### Versão Padrão (IC_Financial_Simulator)
 
-### Passo 2: Abra no Excel
-Duplo clique no arquivo escolhido ou:
-```bash
-Arquivo → Abrir → Selecione o Excel desejado
-```
-
-### Passo 3: Preencha os Dados (campos em azul)
+**Passo 1: Preencha os Dados (células em azul)**
 ```
 D5:  Salário Mensal (R$)
 D6:  Rendimento da Carteira (% a.m.)
@@ -72,14 +108,30 @@ D11: Por quantos anos?
 D12: Taxa de Rendimento Mensal (%)
 ```
 
-### Passo 4: Escolha seu Perfil
+**Passo 2: Escolha seu Perfil**
 Na célula `D29`, selecione:
 - **Conservador** — Segurança, foco em TIJOLO e PAPEL
 - **Moderado** — Equilíbrio (padrão)
 - **Agressivo** — Risco, foco em PAPEL e DESENVOLVIMENTO
 
-### Passo 5: Acompanhe os Resultados
-As projeções e alocações **atualizam automaticamente**!
+**Passo 3: Acompanhe os Resultados**
+As projeções e alocações atualizam automaticamente!
+
+---
+
+### Versão Expandida (IC_Financial)
+
+**Passo 1: Preencha os Dados Pessoais**
+- Aba "TITULAR": Seus dados completos
+
+**Passo 2: Registre os Rendimentos**
+- Aba "INFORMES": Rendimentos por banco
+
+**Passo 3: Detalhe as Receitas**
+- Aba "NOTAS": Cada entrada categorizada
+
+**Passo 4: Simule Investimentos**
+- Com base na sua situação real, a ferramenta sugere alocação em FIIs
 
 ---
 
@@ -180,6 +232,41 @@ n = ln(Meta × i / PMT + 1) / ln(1 + i)
 
 ---
 
+## 📊 Categorias de Receitas (IC_Financial)
+
+O sistema reconhece as seguintes categorias:
+
+| Categoria | Descrição |
+|-----------|-----------|
+| **Holerite** | Salário mensal |
+| **Freelance** | Trabalhos autônomos |
+| **Renda Extra** | Ganhos adicionais |
+| **Venda** | Venda de produtos/itens |
+| **Reembolso** | Devolução de valores |
+| **Bônus** | Bônus ou gratificação |
+| **Comissão** | Comissões por vendas |
+| **Aluguel** | Renda de aluguel |
+| **Dividendos** | Rendimento de investimentos |
+| **Presente** | Doações recebidas |
+| **Lazer** | Atividades de lazer |
+| **Saúde** | Reembolsos de saúde |
+| **Farmácia** | Gastos com medicamentos |
+| **Aluguel** | Despesa de aluguel |
+| **Transporte** | Gastos com transporte |
+| **Alimentação** | Gastos com alimentos |
+| **Educação** | Gastos com educação |
+| **Vestuário** | Gastos com roupas |
+| **Academia** | Mensalidade de academia |
+| **Streaming** | Serviços de streaming |
+| **Internet** | Serviço de internet |
+| **Energia** | Conta de energia |
+| **Água** | Conta de água |
+| **Supermercado** | Compras em supermercado |
+| **Pet** | Gastos com animais |
+| **Viagem** | Gastos com viagens |
+
+---
+
 ## 🛠️ Tecnologias e Ferramentas
 
 ![Excel](https://img.shields.io/badge/Microsoft_Excel-217346?style=flat&logo=microsoft-excel&logoColor=white)
@@ -189,17 +276,35 @@ n = ln(Meta × i / PMT + 1) / ln(1 + i)
 - **Microsoft Excel** — Fórmulas avançadas, formatação condicional e validação de dados
 - **Juros Compostos** — Cálculos precisos de acúmulo de patrimônio
 - **INDEX/MATCH** — Busca dinâmica de alocação por perfil
+- **Validação de Dados** — Dropdowns e regras para facilitar entrada
 - **GitHub** — Versionamento e compartilhamento
 
 ---
 
 ## 💡 Dicas de Uso
 
+✅ **Versão Padrão?** Use quando quer simular rapidamente sem dados pessoais  
+✅ **Versão Expandida?** Use para planejamento realista com sua situação financeira  
 ✅ **Mude os valores** (células azuis) para simular seus próprios cenários  
 ✅ **Use diferentes perfis** para comparar estratégias de risco  
 ✅ **Acompanhe a Meta Financeira** para ver progresso real  
 ✅ **Distribua nos FIIs Reais** para uma carteira prática  
 ✅ **Compare versões** — Use ambas para melhor análise  
+
+---
+
+## 🔄 Comparativo: Qual Usar?
+
+| Aspecto | Simulador Padrão | IC Financial |
+|--------|:----------------:|:------------:|
+| **Simplicidade** | ✅✅✅ | ✅✅ |
+| **Rapidez** | ✅✅✅ | ✅ |
+| **Análise Aprofundada** | ✅✅ | ✅✅✅ |
+| **Dados Pessoais** | ✗ | ✅✅✅ |
+| **Gestão Financeira** | ✗ | ✅✅✅ |
+| **FIIs Reais** | ✅✅✅ | ✅✅ |
+| **Múltiplos Bancos** | ✗ | ✅✅✅ |
+| **Categorias Despesas** | ✗ | ✅✅✅ |
 
 ---
 
@@ -216,7 +321,7 @@ n = ln(Meta × i / PMT + 1) / ln(1 + i)
 
 <div align="center">
 
-**Projeto de Simulação de Investimentos em FIIs**
+**Projeto de Simulação de Investimentos em FIIs + Gestão Financeira Pessoal**
 
 *Desenvolvido com ❤️ para investidores que querem planejar melhor*
 
