@@ -1,4 +1,4 @@
-# 💼 IC Financial Simulator
+##                 💼 IC Financial Simulator
 
 <div align="center">
 
